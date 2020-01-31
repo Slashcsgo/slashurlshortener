@@ -6,7 +6,7 @@ const logger = require('morgan');
 let bodyParser = require('body-parser');
 let app = express();
 let urls = {
-    '/test': 'http://vk.com'
+    '/test01': 'http://vk.com'
 };
 app.use(logger('tiny'));
 
@@ -22,7 +22,7 @@ app.post('/', function(req, res){
         urls[shorten] = 'http://' + url;
         console.log('slashcs.xyz' + shorten)
         console.log(urls)
-        res.send(shorten);
+        res.send('slashcs.xyz' + shorten);
     }
 });
 app.use(function(req, res, next){
