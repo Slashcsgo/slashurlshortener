@@ -35,6 +35,6 @@ app.use(function(req, res, next){
     next();
 });
 
-app.listen(3000, function(){
-    console.log('app listening on 3000 port')
+app.listen(80, function(){
+    console.log('app listening on 80 port')
 });
