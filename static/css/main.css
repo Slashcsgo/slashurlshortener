@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+   width: 100%;
+   background:black;
+   background-size: 5%;
+   height: 100px;
+}
+
+/*
+.text-header{
+    color: blue;
+}
+*/
+
+.logo-text{
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 20px;
+    font-family: 'Bangers', cursive;
+    
+}
+
+.body{
+    text-align: center;
+    border: orange 10px;
+
+}
+
+/*.vl {
+    border:  6px solid black;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    opacity: 0.9;
+    filter: alpha(Opacity=70);
+}
+*/
+
+#url-in{
+    
+    margin-top: 55px;
+    width: 80%;
+    height: 30px;
+    
+}
+
+#url-out{
+
+}
+
+.button-shrink{
+    font-family: 'Righteous', cursive;
+        background:#eee;
+        color:#068;
+        text-decoration:none;
+        display:block;
+        width:120px;
+        text-align:center;
+        margin:20px auto;
+        padding:10px 10px;
+        transition:all 0.3s;
+        }
+       a.boton1:hover{
+        box-shadow:0px -5px 0 #088 inset;
+      
+}
+
+.shortener-wrap{
+    width: 65%;
+    /*background-color: brown; */
+    margin:0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+

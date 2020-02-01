@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slash's URL Shortener</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="container">
-        <input type="text" id="url-in">
-        <button id="shorten"> Shrink </button>
+    <div class="header-class">
+    <header>
+       <div class="logo-text">VD Url Shortener</div>
+    </header>
+    </div>
+    <div class="body">
+        <div class="shortener-wrap">
+        <div class="vl">
+        <input type="text" id="url-in" onclick="this.select(); " placeholder="Введите ссылку" 
+name="url" value="" required="" autofocus="" autocomplete="off">
+        
+        <button id="shorten" type="submit" class="button-shrink"><span class="button-fulltext">Shrink</span></button>
         <p id="url-out">Out URL</p>
+
+        <br><br>
+        <div class="text-enjoy"></div>
+        </div>
+    </div>
     </div>
 
     <script src="./js/shorten.js"></script>
 </body>
 </html>
+
+
