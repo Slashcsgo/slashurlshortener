@@ -3,6 +3,7 @@ const randomString = require('randomstring');
 const shortUrlSettings = {length: 6, charset: 'alphanumeric'};
 const path = require('path');
 const logger = require('morgan');
+const urlHandler = require('./modules/url-handler');
 let bodyParser = require('body-parser');
 let app = express();
 let urls = {
@@ -25,15 +26,16 @@ app.post('/', function(req, res){
         res.send('slashcs.xyz' + shorten);
     }
 });
-app.use(function(req, res, next){
-    if(!!urls[req.url]){
-        res.redirect(urls[req.url]);
-    }
-    else{
-        res.send('404! URL NOT FOUND');
-    }
-    next();
-});
+// app.use(function(req, res, next){
+//     if(!!urls[req.url]){
+//         res.redirect(urls[req.url]);
+//     }
+//     else{
+//         res.send('404! URL NOT FOUND');
+//     }
+//     next();
+// });
+app.use(urlHandler.auth);
 
 app.listen(80, function(){
     console.log('app listening on 80 port')
