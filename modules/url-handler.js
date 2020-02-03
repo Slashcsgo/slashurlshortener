@@ -19,5 +19,11 @@ let authentificate = function(req, res, next){
 let shorten = function(req, res, next){
     let incomingUrl = req.body.url;
     let protocolPatten = /http(s)?:\/\//;
+    let protocol = incomingUrl.match(protocolPatten);
+    incomingUrl = incomingUrl.replace(protocolPatten, '');
+
+    if(!Object.values(urlDict).includes(protocol)){
+
+    }
 }
 module.exports.auth = authentificate;
