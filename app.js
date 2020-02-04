@@ -26,15 +26,7 @@ app.post('/', function(req, res){
         res.send('slashcs.xyz' + shorten);
     }
 });
-// app.use(function(req, res, next){
-//     if(!!urls[req.url]){
-//         res.redirect(urls[req.url]);
-//     }
-//     else{
-//         res.send('404! URL NOT FOUND');
-//     }
-//     next();
-// });
+
 app.use(urlHandler.auth);
 
 app.listen(80, function(){

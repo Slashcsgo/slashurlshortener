@@ -1,6 +1,9 @@
-let urls = {
-    '/test': 'http://vk.com'
-};
+let testModule = require('./modules/url-handler');
 
-console.log(Object.values(urls).includes('http://vk.com'))
-console.log(urls['/test'])
+let req = {
+    body: {
+        url: 'github.com/'
+    }
+}
+
+testModule.shorten(req)
